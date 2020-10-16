@@ -20,9 +20,16 @@ No, Javascript no es exactamente equivalente a ECMAScript, las características 
 
 El [TC39](https://tc39.es/), es el comité que propone nuevas funcionalidades al stándar mediante un proceso que cuenta con 5 [stages](https://tc39.es/process-document/) por las que toda propuesta de nueva funcionalidad tiene que pasar hasta alcanzar el stage 4, que es el stage final. Adicionalmente las funcionalidades seleccionadas pasan, en la mayoría de los casos, a formar parte de la especificación ECMAScript seguida del nombre del año, ya que la nomenclatura de ECMAScript 5, ECMAScript 6, etc y que hemos usado durante años previos ya no volverá a ser usada.
 
-![](stages.jpg)
+![stages](stages.jpg)
 
 ## Evolución
+
+1. [ECMAScript 6](#ECMAScript-6-2015)
+2. [ECMAScript 7](#ECMAScript-7-2016)
+3. [ECMAScript 8](#ECMAScript-8-2017)
+4. [ECMAScript 9](#ECMAScript-9-2018)
+5. [ECMAScript 10](#ECMAScript-10-2019)
+6. [ECMAScript 2020](#ECMAScript-2020-ES2020)
 
 ## ECMAScript 6 (2015)
 
