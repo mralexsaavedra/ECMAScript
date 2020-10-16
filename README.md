@@ -2,10 +2,14 @@
 
 He recopilado información de otras fuentes para poder llegar a completar esta explicación.
 
-Fuentes:
+## Fuentes:
+  
   👉🏽 [Alex Camacho](https://github.com/alexcamachogz/ECMAScript6)
+  
   👉🏽 [Pablo Magaz](https://pablomagaz.com/)
+  
   👉🏽 [Open Webinars](https://openwebinars.net/blog/que-es-ecmascript/)  
+  
   👉🏽 [Oscar Barajas en Platzi](https://youtu.be/VHHXLqYg1Sk)
 
 ## Qué es ECMAScript
