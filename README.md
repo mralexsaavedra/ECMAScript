@@ -1,5 +1,13 @@
 # ECMAScript 6+
 
+He recopilado información de otras fuentes para poder llegar a completar esta explicación.
+
+Fuentes:
+  👉🏽 [Alex Camacho](https://github.com/alexcamachogz/ECMAScript6)
+  👉🏽 [Pablo Magaz](https://pablomagaz.com/)
+  👉🏽 [Open Webinars](https://openwebinars.net/blog/que-es-ecmascript/)  
+  👉🏽 [Oscar Barajas en Platzi](https://youtu.be/VHHXLqYg1Sk)
+
 ## Qué es ECMAScript
 
 ECMAScript específicamente es el estándar que a partir del año 2015 a la actualidad se encarga de regir como debe ser interpretado y funcionar el lenguaje JavaScript, siendo este (JS – JavaScript) interpretado y procesado por multitud de plataformas, entre las que se encuentran los navegadores web, NodeJS u otros ambientes como el desarrollo de aplicaciones para los distintos sistemas operativos que actualmente existen en el mercado. Los responsables de dichos navegadores y JavaScript deben encargarse de interpretar el lenguaje tal como lo fija ECMAScript.
@@ -11,6 +19,8 @@ No, Javascript no es exactamente equivalente a ECMAScript, las características 
 ## Cómo funciona 
 
 El [TC39](https://tc39.es/), es el comité que propone nuevas funcionalidades al stándar mediante un proceso que cuenta con 5 [stages](https://tc39.es/process-document/) por las que toda propuesta de nueva funcionalidad tiene que pasar hasta alcanzar el stage 4, que es el stage final. Adicionalmente las funcionalidades seleccionadas pasan, en la mayoría de los casos, a formar parte de la especificación ECMAScript seguida del nombre del año, ya que la nomenclatura de ECMAScript 5, ECMAScript 6, etc y que hemos usado durante años previos ya no volverá a ser usada.
+
+![](stages.jpg)
 
 ## Evolución
 
@@ -483,4 +493,60 @@ Nos permite convertir arrays a un objeto. Es la caracteristica inversa de `entri
 ```jsx
 let entries = [["name", "Alex"], ["age", 26]];
 console.log(Object.fromEntries(entries));
+```
+
+## ECMAScript 2020 (ES2020)
+
+### Dynamic import()
+
+La característica más esperada en JavaScript
+
+```jsx
+if (true) {
+  const module = await import('.module.js);
+  module.function();
+}
+```
+
+### Optional Chaining
+
+Proporciona una forma de simplificar el acceso a los valores a través de objetos conectados cuando es posible que una referencia o función sea undefined o null.
+
+```jsx
+const nameLength = db?.user?.name?.length;
+```
+
+### globalThis
+
+globalThis contiene el valor global this según el contexto del objeto global.
+
+```jsx
+const getGlobalThis = () => {
+  if (typeof globalThis !== 'undefined') return globalThis;
+};
+
+const theGlobalThis = getGlobalThis();
+```
+
+### BigInt
+
+Nos permite tener una representación entera mucho mayor en tu código JS.
+
+```jsx
+const max = Numer.MAX_SAFE_INTEGER;
+// → 9_007_199_254_740_991
+```
+
+### Promise.allSettled
+
+Retorna un objeto describiendo cada uno de los resultados de una promesa
+
+```jsx
+const promises = [
+  fetch('/api-call-1'),
+  fetch('/api-call-2'),
+  fetch('/api-call-3'),
+];
+
+await Promise.allSettled(promises);
 ```
